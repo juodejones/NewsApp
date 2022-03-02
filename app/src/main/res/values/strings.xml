@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+    <string name="sample_headline">Main Heading text Main Heading text Main Heading text Main Heading text Main Heading text</string>
+    <string name="sample_content">this is a 6 line content description this is a 6 line content description this is a 6 line content description this is a 6 line content description this is a 6 line content description this is a 6 line content description this is a 6 line content description this is a 6 line content description</string>
+    <string name="published_at">Published At : </string>
+    <string name="by">By : </string>
+</resources>
