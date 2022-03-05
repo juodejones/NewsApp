@@ -1,11 +1,9 @@
 package com.jones.newsapp.fragments;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.SearchView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -14,13 +12,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.jones.newsapp.R;
-import com.jones.newsapp.RecyclerViewAdapter;
+import com.jones.newsapp.adapter.RecyclerViewAdapter;
 import com.jones.newsapp.data.MainNews;
 import com.jones.newsapp.data.Repository;
 import com.jones.newsapp.model.DataModel;
 
 import java.util.ArrayList;
-import java.util.stream.Collectors;
 
 import retrofit2.Call;
 import retrofit2.Callback;

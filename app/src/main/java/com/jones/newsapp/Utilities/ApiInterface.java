@@ -26,4 +26,10 @@ public interface ApiInterface {
             @Query("apiKey") String apiKey
     );
 
+    @GET("top-headlines")
+    Call<MainNews> getSearchNews(
+            @Query("q") String q,
+            @Query("apiKey") String apiKey
+    );
+
 }

@@ -1,5 +1,6 @@
 package com.jones.newsapp.model;
 
+
 public class DataModel {
 
     private String author, title, description, url, urlToImage, publishedAt;

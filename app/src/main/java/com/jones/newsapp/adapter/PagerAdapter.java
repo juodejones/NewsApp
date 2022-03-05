@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
+import com.jones.newsapp.controller.AppController;
 import com.jones.newsapp.fragments.EntertainmentFragment;
 import com.jones.newsapp.fragments.HealthFragment;
 import com.jones.newsapp.fragments.HomeFragment;
@@ -27,17 +28,17 @@ public class PagerAdapter extends FragmentPagerAdapter {
 
         switch (position) {
             case 0:
-                return new HomeFragment();
+                return AppController.getInstance().getHomeFragment();
             case 1 :
-                return new SportsFragment();
+                return AppController.getInstance().getSportsFragment();
             case 2:
-                return new HealthFragment();
+                return AppController.getInstance().getHealthFragment();
             case 3:
-                return new ScienceFragment();
+                return AppController.getInstance().getScienceFragment();
             case 4:
-                return new EntertainmentFragment();
+                return AppController.getInstance().getEntertainmentFragment();
             case 5:
-                return new TechFragment();
+                return AppController.getInstance().getTechFragment();
         }
         return null;
     }

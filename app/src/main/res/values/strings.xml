@@ -4,4 +4,9 @@
     <string name="sample_content">this is a 6 line content description this is a 6 line content description this is a 6 line content description this is a 6 line content description this is a 6 line content description this is a 6 line content description this is a 6 line content description this is a 6 line content description</string>
     <string name="published_at">Published At : </string>
     <string name="by">By : </string>
+    <string name="action_settings">About</string>
+    <string name="creator_name"><i>Created by</i> : <b>Juode Jones</b></string>
+    <string name="created_time"><i>Created on</i> : 02/03/2022</string>
+    <string name="powered_by"><i>Powered By</i> : https://newsapi.org \n News Provided by BBC</string>
+    <string name="about">About</string>
 </resources>

@@ -6,15 +6,51 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:text="@string/app_name"
+            android:textColor="@color/sky_blue"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/search"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="150dp"
+            android:background="@color/white"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_search_category_default" />
+
+        <ImageButton
+            android:id="@+id/fav_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/star_on"
+            android:background="@color/white"
+            android:layout_marginLeft="20dp"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_layout"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
+        android:layout_below="@id/toolbar"
         app:tabIndicatorColor="#03A9F4"
         app:tabIndicatorHeight="3dp"
         app:tabMode="scrollable"
         app:tabSelectedTextColor="#03A9F4"
         app:tabTextColor="#618C8F">
+        
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/home"

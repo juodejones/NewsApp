@@ -1,31 +1,24 @@
 package com.jones.newsapp.fragments;
 
-import android.annotation.SuppressLint;
-import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.SearchView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.jones.newsapp.R;
-import com.jones.newsapp.RecyclerViewAdapter;
+import com.jones.newsapp.adapter.RecyclerViewAdapter;
 import com.jones.newsapp.data.MainNews;
 import com.jones.newsapp.data.Repository;
 import com.jones.newsapp.model.DataModel;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
 
 import retrofit2.Call;
 import retrofit2.Callback;
