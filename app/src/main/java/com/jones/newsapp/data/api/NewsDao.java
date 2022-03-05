@@ -1,4 +1,4 @@
-package com.jones.newsapp.data;
+package com.jones.newsapp.data.api;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;

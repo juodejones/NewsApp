@@ -13,9 +13,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.jones.newsapp.R;
 import com.jones.newsapp.adapter.RecyclerViewAdapter;
-import com.jones.newsapp.data.MainNews;
-import com.jones.newsapp.data.Repository;
+import com.jones.newsapp.data.api.MainNews;
+import com.jones.newsapp.data.api.NewsApiRepository;
+import com.jones.newsapp.data.api.Repository;
 import com.jones.newsapp.model.DataModel;
+import com.jones.newsapp.model.NewsApiViewModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,10 +28,11 @@ import retrofit2.Response;
 
 public class HomeFragment extends Fragment {
 
-    String api = "e0a3b53546b740658fed055c7220774d";
+    private String api = "e0a3b53546b740658fed055c7220774d";
+    private String country = "in";
+
     List<DataModel> dataModels;
     RecyclerViewAdapter adapter;
-    String country = "in";
     private RecyclerView recyclerView;
 
     @Nullable
@@ -43,13 +46,6 @@ public class HomeFragment extends Fragment {
         adapter = new RecyclerViewAdapter(getContext(), dataModels);
         recyclerView.setAdapter(adapter);
 
-        findNews();
-
-        return view;
-    }
-
-    private void findNews() {
-
         Repository.getRetrofit().getNews(country, 100, api).enqueue(new Callback<MainNews>() {
             @Override
             public void onResponse(Call<MainNews> call, Response<MainNews> response) {
@@ -59,11 +55,15 @@ public class HomeFragment extends Fragment {
                     adapter.notifyDataSetChanged();
                 }
             }
-
             @Override
             public void onFailure(Call<MainNews> call, Throwable t) {
 
             }
         });
+
+
+        return view;
     }
+
+
 }

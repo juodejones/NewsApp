@@ -1,7 +1,6 @@
 package com.jones.newsapp.Utilities;
 
-import com.jones.newsapp.data.MainNews;
-import com.jones.newsapp.model.DataModel;
+import com.jones.newsapp.data.api.MainNews;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

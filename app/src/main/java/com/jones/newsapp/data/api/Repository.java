@@ -1,4 +1,4 @@
-package com.jones.newsapp.data;
+package com.jones.newsapp.data.api;
 
 import com.jones.newsapp.Utilities.ApiInterface;
 

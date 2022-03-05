@@ -1,4 +1,4 @@
-package com.jones.newsapp.data;
+package com.jones.newsapp.data.room;
 
 import android.content.Context;
 
@@ -8,6 +8,7 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
+import com.jones.newsapp.data.api.NewsDao;
 import com.jones.newsapp.model.News;
 
 import java.util.concurrent.ExecutorService;

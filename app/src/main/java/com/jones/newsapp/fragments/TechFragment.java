@@ -13,8 +13,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.jones.newsapp.R;
 import com.jones.newsapp.adapter.RecyclerViewAdapter;
-import com.jones.newsapp.data.MainNews;
-import com.jones.newsapp.data.Repository;
+import com.jones.newsapp.data.api.MainNews;
+import com.jones.newsapp.data.api.Repository;
 import com.jones.newsapp.model.DataModel;
 
 import java.util.ArrayList;

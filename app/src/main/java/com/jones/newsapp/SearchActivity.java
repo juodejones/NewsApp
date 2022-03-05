@@ -9,8 +9,8 @@ import android.os.Bundle;
 import android.widget.SearchView;
 
 import com.jones.newsapp.adapter.RecyclerViewAdapter;
-import com.jones.newsapp.data.MainNews;
-import com.jones.newsapp.data.Repository;
+import com.jones.newsapp.data.api.MainNews;
+import com.jones.newsapp.data.api.Repository;
 import com.jones.newsapp.model.DataModel;
 
 import java.util.ArrayList;

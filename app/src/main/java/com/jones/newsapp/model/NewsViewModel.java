@@ -6,7 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
-import com.jones.newsapp.data.NewsRepository;
+import com.jones.newsapp.data.room.NewsRepository;
 
 import java.util.List;
 

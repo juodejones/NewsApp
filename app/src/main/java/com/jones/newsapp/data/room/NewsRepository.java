@@ -1,10 +1,10 @@
-package com.jones.newsapp.data;
+package com.jones.newsapp.data.room;
 
-import android.app.Application;
 import android.content.Context;
 
 import androidx.lifecycle.LiveData;
 
+import com.jones.newsapp.data.api.NewsDao;
 import com.jones.newsapp.model.News;
 
 import java.util.List;
